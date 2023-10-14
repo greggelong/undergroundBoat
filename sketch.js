@@ -1,5 +1,6 @@
 let boat
-
+let osphone = false;
+let androidphone = false;
 let x, y,z, xx, zz
 let bsz
 let yarr = []
@@ -19,6 +20,18 @@ function setup() {
   x=0
   sz =width/200
   imageMode(CENTER)
+  // added code for os phones
+  if (typeof DeviceMotionEvent.requestPermission === 'function') {
+    DeviceMotionEvent.requestPermission()
+      .then(permissionState => {
+        if (permissionState === 'granted') {
+          osphone=true;
+        }
+      })
+      .catch(console.error);
+  } else {
+    androidphone = true;
+  }
 }
 
 function draw() {
