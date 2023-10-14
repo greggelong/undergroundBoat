@@ -9,7 +9,7 @@ let sz
 
 
 function preload(){
-  boat = loadImage("oboat.png")
+  boat = loadImage("oboats.png")
 }
 
 function setup() {
