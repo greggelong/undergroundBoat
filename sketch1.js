@@ -116,7 +116,7 @@ function draw() {
   endShape()
   // z line
   beginShape()
-  stroke(0)
+  stroke(255,0,0)
   for (let i =0; i<zarr.length; i++){
     //ellipse(i*sz,height/4+yarr[i],30,30 )
     vertex(i*sz,height/1.2+zarr[i])
