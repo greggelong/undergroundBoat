@@ -29,9 +29,9 @@ function setup() {
         exact: "environment",
       },
     },
-    //video: {
-    //facingMode: "user"
-    //}
+    // video: {
+    // facingMode: "user"
+    // }
   };
   capture = createCapture(VIDEO, constraints);
   capture.size(width/10, height/10);
@@ -76,7 +76,8 @@ function requestAccess(){
 }
 
 function draw() {
-  image(capture,0,0,width,height)
+  //imageMode(CORNER)
+  image(capture,width/2,height/2,width,height)
   // y sky
   fill(0,0,130)
   angleMode(DEGREES)
