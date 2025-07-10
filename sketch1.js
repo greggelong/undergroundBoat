@@ -34,7 +34,7 @@ function setup() {
     // }
   };
   capture = createCapture(VIDEO, constraints);
-  capture.size(width/10, height/10);
+  capture.size(width/2, height/2);
   capture.hide();
   imageMode(CENTER)
   // added code for os phones
